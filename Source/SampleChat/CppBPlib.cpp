@@ -98,7 +98,7 @@ FString UCppBPlib::TakeMessage(const FString& Message, const TArray<int32>& Corr
 				return FString::Printf(TEXT("%d Strike, %d Ball"), StrikeCount, BallCount);
 			}
 
-			//GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("%s"), *Str));
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, FString::Printf(TEXT("%s"), *Str));
 		}
 	}
 	else
